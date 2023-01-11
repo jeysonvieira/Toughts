@@ -1,0 +1,178 @@
+/* Layout */
+
+* {
+    background-color: black;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+}
+
+.btn {
+    border: 1px solid #FF6B1A;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px #FF6B1A;
+    text-decoration: none;
+    font-size: 1.3em;
+    padding: 5px;
+}
+
+
+
+.divbodymain {
+    height: 100vh;
+}
+
+
+
+/*Flash Message */
+.flash_message{
+    width: 500px;
+    margin: 5px auto 5px auto;
+    font-size: 1.2em;
+    
+}
+
+.flash_message p{
+    background-color: #ff6a1ae5;
+    text-align: center;
+    height: 30px;
+    border-radius: 10px;
+}
+
+
+
+/* Home */
+
+header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin: 10px 10px 0px 10px;
+
+}
+
+
+.imglogo {
+    display: flex;
+    flex-flow: row nowrap;
+
+}
+
+.login {
+    margin-top: 20px;
+
+}
+
+.login a {
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+
+.imglogo h1 {
+    margin-top: 10px;
+}
+
+
+.pensamentosmain li{
+    font-size: 1.3em;
+    border-bottom: 1px solid #FF6B1A;
+    list-style: none;
+    margin: 10px 0px 10px 10px;
+}
+
+
+/* Sign Up */
+
+.divsignup {
+    margin: 0px auto 0px auto;
+    width: 500px;
+}
+
+
+.divsignup form {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+
+.inputTxt {
+    height: 30px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+/* Deshbord */
+
+.margin-left {
+    margin-left: 10px;
+}
+
+.deshlink {
+    margin: 10px 15px 10px 0px;
+    text-align: end;
+}
+
+
+.deshbord_div h1,
+.deshbord_div .deshlink,
+.deshbord_div .seuspensamentos {
+
+    margin-left: 10px;
+
+}
+
+.deshbord_div h1 {
+    margin-top: 15px;
+}
+
+
+.seuspensamentos {
+    font-size: 1.3em;
+}
+
+.seuspensamentos p {
+    margin: 20px 0px 20px 0px;
+
+}
+
+.seuspensamentos li {
+    list-style: none;
+    border-bottom: 1px solid #FF6B1A;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.form-tought{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+.alter-form{
+    margin-right: 10px;
+}
+
+.btn-drop {
+    font-size: 1em;
+    cursor: pointer;
+}
+
+
+/*Add Toughts */
+
+.addtoughts_div form label{
+    display: block;
+    font-size: 1.5em;
+    margin: 10px 0px 10px 10px;
+}
+
+.input-txt{
+    width: 500px;
+    height: 30px;
+    margin: 10px 5px 0px 10px;
+    border-radius: 5px;
+}

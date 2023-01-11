@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Toughts</title>
+</head>
+<body>
+
+    <div class="divbodymain">
+
+
+
+        <header>
+
+            <div class="imglogo">
+                <img src="img/toughts_logo.png" alt="">
+                <a href="/">
+                    <h1>Toughts</h1>
+                </a>
+            </div>
+
+            <div class="login">
+
+                {{#if session.userid}}
+
+                    <a href="/" class="btn">Pensamentos</a>
+
+                    <a href="/deshbord" class="btn">Deshbord</a>
+
+                    <a href="/logout" class="btn">Sair</a>
+
+                {{else}}
+                    <a href="/signup" class="btn">Sign up</a>
+                    <a href="/login" class="btn">Login</a>
+
+                {{/if}}
+            </div>
+        </header>
+
+        <div class="flash_message">
+            {{#if messages.info}}
+                <p>{{messages.info}}</p>
+            {{/if}}
+        </div>
+
+        {{{body}}}
+
+    </div>
+    
+
+    <footer>
+
+        <p>&copy Toughts</p>
+
+    </footer>
+</body>
+</html>

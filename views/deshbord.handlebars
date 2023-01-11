@@ -1,0 +1,48 @@
+<div class="deshbord_div">
+
+    <h1 class="">DESHBORD</h1>
+
+    <div class="deshlink">
+        <a href="/addtoughts" class="btn">Criar pensamentos</a>
+    </div>
+
+
+    <div class="seuspensamentos">
+
+        <p>Seus pensamentos: </p>
+
+        {{#each toughtValues}}
+
+            <li>
+                <span>"{{this.tought}}"</span>
+                <div class="form-tought">
+
+                    <form action="/toughtsEdit" method="get" class="alter-form">
+                        <input type="hidden" name="id" value="{{this.id}}">
+                        <input type="submit" value="Editar" class="btn btn-drop">
+                    </form>
+
+
+                    <form action="/toughts/remove" method="post">
+                    
+                        <input type="hidden" name="id" value="{{this.id}}">
+                        <input type="submit" value="Excluir" class="btn btn-drop">
+                    
+                    </form>
+                    
+                </div>
+            </li>
+
+        {{/each}}
+
+
+        {{#if verify}}
+
+            <p>Você ainda não possúi nenhum pensamento cadastrado. <a href="/addtoughts">Click aqui para cadastrar.</a></p>
+
+        {{/if}}
+
+    </div>
+
+
+</div>
